@@ -4,57 +4,73 @@
     box-sizing: border-box;
 }
 
-
-html, body{
-    height:100%;
+html, body {
+    height: 100%;
     width: 100%;
-    margin: 0px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background: linear-gradient(rgba(99, 248, 99, 0.8),rgba(255, 253, 208, 0.8), rgba(255, 0, 0, 0.8));
+    background: linear-gradient(
+        rgba(99, 248, 99, 0.8),
+        rgba(255, 253, 208, 0.8),
+        rgba(255, 0, 0, 0.8)
+    );
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #heading {
-    font-size: 4em;
+    font-size: 3rem;
     font-weight: 600;
     text-decoration: underline;
-    position: relative;
-    top: 20px;
-    left: 20%; 
+    text-align: center;
+    margin-top: 20px;
 }
 
 #einleitung {
-    font-size: 1.5em;
+    font-size: 1.2rem;
     font-weight: 500;
-    max-width: 55%;
-    position: relative;
-    top: 150px;
-    left: 5%;
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: left;
+    padding: 0 20px;
 }
 
 #wish1 {
-    position: relative;
-    top: 60px;
-    left: 10%;
-    font-size: 1.5em;
-    max-height: none;
-}
-
-#img1 {
-    position: relative;
-    top: 180px;
-    left: 25%;
-    aspect-ratio: 1/1;
-    width: 180px;
-    image-rendering: auto;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 20px 10%;
 }
 
 #auspruch {
-    position: relative;
-    top: 210px;
-    left: 10%;
-    font-size: 1.5em;
+    font-size: 1.3rem;
     font-weight: 500;
+    margin: 20px 10%;
+}
 
+#img1 {
+    display: block;
+    margin: 30px auto;
+    width: 50vw;
+    max-width: 200px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    #heading {
+        font-size: 2.2rem;
+    }
+
+    #einleitung {
+        font-size: 1.1rem;
+        max-width: 95%;
+    }
+
+    #wish1, #auspruch {
+        font-size: 1.1rem;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #img1 {
+        width: 60vw;
+        max-width: 180px;
+    }
 }
