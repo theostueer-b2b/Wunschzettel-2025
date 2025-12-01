@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body{
+    height:100%;
+    width: 100%;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: linear-gradient(rgba(99, 248, 99, 0.349),rgba(255, 253, 208, 0.349), rgba(255, 0, 0, 0.349));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#heading {
+    font-size: 4em;
+    font-weight: 600;
+    text-decoration: underline;
+    position: relative;
+    top: 20px;
+    left: 20%; 
+}
+
+#einleitung {
+    font-size: 1.5em;
+    font-weight: 500;
+    max-width: 55%;
+    position: relative;
+    top: 150px;
+    left: 5%;
+}
+
+#wish1 {
+    position: relative;
+    top: 60px;
+    left: 10%;
+    font-size: 1.5em;
+    max-height: none;
+}
+
+#img1 {
+    position: relative;
+    top: 180px;
+    left: 25%;
+    aspect-ratio: 1/1;
+    width: 180px;
+    image-rendering: auto;
+}
+
+#auspruch {
+    position: relative;
+    top: 210px;
+    left: 10%;
+    font-size: 1.5em;
+    font-weight: 500;
+}
