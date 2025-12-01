@@ -7,6 +7,7 @@
 html, body {
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
     background: linear-gradient(
         rgba(99, 248, 99, 0.8),
         rgba(255, 253, 208, 0.8),
@@ -15,12 +16,20 @@ html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Verhindert Samsung-Rand-Bug */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ab hier normales Layout */
 #heading {
     font-size: 3rem;
     font-weight: 600;
     text-decoration: underline;
     text-align: center;
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 #einleitung {
@@ -28,17 +37,10 @@ html, body {
     font-weight: 500;
     max-width: 800px;
     margin: 40px auto;
-    text-align: left;
     padding: 0 20px;
 }
 
-#wish1 {
-    font-size: 1.3rem;
-    font-weight: 500;
-    margin: 20px 10%;
-}
-
-#auspruch {
+#wish1, #auspruch {
     font-size: 1.3rem;
     font-weight: 500;
     margin: 20px 10%;
